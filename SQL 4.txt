@@ -1,0 +1,12 @@
+#Month_Day_Year extraction
+SELECT
+  FORMAT_DATE('%b', Date_Time) AS Month,
+  EXTRACT(DAY
+  FROM
+    Date_Time) AS Day,
+  FORMAT_DATE('%A', Date_Time) AS DayOfWeek,
+  EXTRACT(YEAR
+  FROM
+    Date_Time) AS Year
+FROM
+  final-381305.uber_final_dataset.uber_fianl_table;

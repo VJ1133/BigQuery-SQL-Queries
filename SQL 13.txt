@@ -1,0 +1,6 @@
+#string converted datatype
+#standardSQL
+SELECT 
+  FORMAT_TIMESTAMP('%Y-%m-%d %H:%M:%S', Date_Time) AS Date_Time,
+  Lat,Lon,Base
+FROM final-381305.uber_final_dataset.uber_fianl_table;

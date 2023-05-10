@@ -1,0 +1,10 @@
+#NumTrips_DayOfWeek
+SELECT 
+  DayOfWeek,
+  COUNT(*) AS NumTrips_DayOfWeek
+FROM 
+  final-381305.uber_final_dataset.uber_final_table2 
+GROUP BY 
+  DayOfWeek 
+ORDER BY 
+  DayOfWeek ASC;

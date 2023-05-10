@@ -1,0 +1,23 @@
+#query_for_final_dataset
+SELECT 
+  FORMAT_DATE('%b', Date_Time) AS Month,
+  EXTRACT(DAY FROM Date_Time) AS Day,
+  FORMAT_DATE('%A', Date_Time) AS DayOfWeek,
+  EXTRACT(YEAR FROM Date_Time) AS Year,
+  EXTRACT(HOUR FROM Date_Time) AS Hour,
+  EXTRACT(MINUTE FROM Date_Time) AS Minute,
+  EXTRACT(SECOND FROM Date_Time) AS Second,
+  Lat,
+  Lon,
+  Base
+FROM 
+(
+  SELECT * FROM final-381305.uber_final_dataset.uber_table1
+  UNION ALL
+  SELECT * FROM final-381305.uber_final_dataset.uber_table2
+  UNION ALL
+  SELECT * FROM final-381305.uber_final_dataset.uber_table3
+  UNION ALL
+  SELECT * FROM final-381305.uber_final_dataset.uber_table4
+) merged_tables
+ORDER BY Date_Time;

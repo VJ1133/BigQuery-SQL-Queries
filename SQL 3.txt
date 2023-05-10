@@ -1,0 +1,12 @@
+#Merging_Datatables
+SELECT *
+FROM final-381305.uber_final_dataset.uber_table1
+UNION ALL
+SELECT *
+FROM final-381305.uber_final_dataset.uber_table2
+UNION ALL
+SELECT *
+FROM final-381305.uber_final_dataset.uber_table3
+UNION ALL
+SELECT *
+FROM final-381305.uber_final_dataset.uber_table4;

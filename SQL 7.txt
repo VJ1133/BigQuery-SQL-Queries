@@ -1,0 +1,10 @@
+#NumberOfTripsPerHour
+SELECT 
+  Hour, 
+  COUNT(*) AS NumTrips 
+FROM 
+  final-381305.uber_final_dataset.uber_final_table2 
+GROUP BY 
+  Hour 
+ORDER BY 
+  Hour ASC;

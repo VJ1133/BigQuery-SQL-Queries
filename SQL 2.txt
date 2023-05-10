@@ -1,0 +1,2 @@
+#Distinct Base
+SELECT DISTINCT BASE FROM `final-381305.Uber.Uber_table` LIMIT 500

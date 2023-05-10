@@ -1,0 +1,6 @@
+#Time_Extact
+SELECT 
+  EXTRACT(HOUR FROM Date_Time) AS Hour,
+  EXTRACT(MINUTE FROM Date_Time) AS Minute,
+  EXTRACT(SECOND FROM Date_Time) AS Second
+FROM `final-381305.uber_final_dataset.uber_fianl_table`;

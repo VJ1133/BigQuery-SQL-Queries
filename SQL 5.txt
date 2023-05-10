@@ -1,0 +1,10 @@
+#NumTripsPerMonth
+SELECT 
+  Month, 
+  COUNT(*) AS NumTrips 
+FROM 
+  final-381305.uber_final_dataset.uber_final_table2 
+GROUP BY 
+  Month 
+ORDER BY 
+  Month ASC;

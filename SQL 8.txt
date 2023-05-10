@@ -1,0 +1,6 @@
+#Table 1
+CREATE TABLE final-381305.Uber.Table1 AS
+SELECT *
+FROM final-381305.Uber.Uber_table
+WHERE Base = "B02512"
+LIMIT 100;

@@ -1,0 +1,11 @@
+#Trips in each month per hour in a day
+SELECT 
+  Month, 
+  Hour,
+  COUNT(*) AS NumTrips 
+FROM 
+  final-381305.uber_final_dataset.uber_final_table2 
+GROUP BY 
+  Month, Hour 
+ORDER BY 
+  Month ASC, Hour ASC;
